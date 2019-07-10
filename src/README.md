@@ -1,0 +1,1 @@
+# 将vue exmaples 里的 dynamic-component 改成 单文件模式
