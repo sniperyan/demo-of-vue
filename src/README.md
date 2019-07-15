@@ -1,3 +1,3 @@
 # TODOLIST
 
-vue + vuecli3 + vue-router
+vue + vuecli3 + vue-router + vuex

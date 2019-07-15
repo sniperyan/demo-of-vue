@@ -17,28 +17,19 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 export default {
   name: 'FooterView',
-  // props:{
-  //   todos: {
-  //     type: Array
-  //   },
-  //   current: {
-  //     type: String
-  //   }
-  // },
-  computed:{
-     ...mapState({
-        todos: state => state.todo.todos,
-        current: state => state.todo.current,
-      }),
+  props:{
+    todos: {
+      type: Array
+    },
+    current: {
+      type: String
+    }
   },
-  // computed: mapState(["todos","current"]),
   methods:{
     removeCompleted(){
-      // this.$emit('remove-completed')
-      this.$store.commit('todo/remove-completed');
+      this.$emit('remove-completed')
 
     },
     showCurrent(current){

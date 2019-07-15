@@ -32,8 +32,7 @@ export default {
        * 所以 v-on:myEvent 将会变成 v-on:myevent——导致 myEvent 不可能被监听到
        * 因此，我们推荐你始终使用 kebab-case 的事件名
        */
-      // this.$emit('add-todo', { title: value, completed: false })
-      this.$store.commit('todo/add-todo', { title: value, completed: false });
+      this.$emit('add-todo', { title: value, completed: false })
       this.newTodo = ''
     }
   }
